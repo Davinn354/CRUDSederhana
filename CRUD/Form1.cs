@@ -22,5 +22,15 @@ namespace CRUD
             LoadData()
         }
         // Fungsi untuk mengosongkan semua input pada TextBox
+
+        private void ClearForm()
+        {
+            txtNIM.Clear();
+            txtNama.Clear();
+            txtEmail.Clear();
+
+            //Fokus Kembali ke NIM agar user siap memasukan data baru
+
+        }
     }
 }
