@@ -154,6 +154,12 @@ namespace CRUD
             MessageBox.Show($"Jumlah kolom:  {dgvMahasiswa.ColumnCount}\nJumlah Baris: {dgvMahasiswa.Rowcount}",
                 "Debbuging dataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        private void dgv
+        private void dgvMahasiswa_CellClick(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if(e. RowIndex >=0)
+            {
+
+            }
+        }
     }
 }
