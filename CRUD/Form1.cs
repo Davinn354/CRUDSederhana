@@ -30,6 +30,12 @@ namespace CRUD
             txtEmail.Clear();
 
             //Fokus Kembali ke NIM agar user siap memasukan data baru
+            txtNIM.Focus();
+
+        }
+
+        private void LoadData()
+        {
 
         }
     }
