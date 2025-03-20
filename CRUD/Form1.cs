@@ -146,5 +146,14 @@ namespace CRUD
                 MessageBox.Show("Pilih data yang akan dihapus! ", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        private void BtnRefresh(object sender, EventArgs e)
+        {
+            LoadData();
+
+            // Debugging : cek jumlah kolom dam baris
+            MessageBox.Show($"Jumlah kolom:  {dgvMahasiswa.ColumnCount}\nJumlah Baris: {dgvMahasiswa.Rowcount}",
+                "Debbuging dataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private void dgv
     }
 }
