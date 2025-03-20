@@ -19,7 +19,8 @@ namespace CRUD
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            LoadData()
         }
+        // Fungsi untuk mengosongkan semua input pada TextBox
     }
 }
