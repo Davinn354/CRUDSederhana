@@ -118,7 +118,13 @@ namespace CRUD
 
                             using (SqlCommand cmd = new SqlCommand(querry, conn))
                             {
+                                cmd.Parameters.AddWithValue("@NIM", nim);
+                                int rowsAffected = cmd.ExecuteNonQuery();
 
+                                if (rowsAffected > 0)
+                                {
+
+                                }
                             }
                         }
                     }
