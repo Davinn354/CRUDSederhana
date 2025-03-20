@@ -45,8 +45,14 @@ namespace CRUD
                     string querry = "SELECT NIM AS [NIM], Nama, Email, Telepon, Alamat FROM Mahasiswa";
                     SqlDataAdapter da = new SqlDataAdapter(querry, conn);
                     DataTable dt = new DataTable();
+                    da.Fill(dt);
 
+                    dgvMahasiswa.AutoGenerateColumns = true;
+                    dgvMahasiswa.DataSource = dt;
+
+                    ClearForm(); // auto Clear setelah LoadData
                 }
+
             }
         }
     }
