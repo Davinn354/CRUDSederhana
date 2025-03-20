@@ -69,6 +69,10 @@ namespace CRUD
                         MessageBox.Show("Harap isi semua data! ", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
+
+                    conn.Open();
+                    string querry = "INSERT INTO Mahasiswwa (NIM, Nama, Email, Telepon, Alamat) VALUES (@NIM, @Nama, @Email, @Telepon, @Alamat)";
+
                 }
             }
         }
