@@ -58,5 +58,18 @@ namespace CRUD
                 }
             }
         }
+        private void BtnTambah(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "")
+                    {
+
+                    }
+                }
+            }
+        }
     }
 }
