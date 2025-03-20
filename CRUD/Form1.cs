@@ -112,7 +112,14 @@ namespace CRUD
                     {
                         try
                         {
+                            string nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Vakue.ToString();
+                            conn.Open();
+                            string querry = "DELETE FROM Mahasiswa WHERE NIM = @NIM";
 
+                            using (SqlCommand cmd = new SqlCommand(querry, conn))
+                            {
+
+                            }
                         }
                     }
 
