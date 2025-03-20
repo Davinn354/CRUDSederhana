@@ -72,7 +72,10 @@ namespace CRUD
 
                     conn.Open();
                     string querry = "INSERT INTO Mahasiswwa (NIM, Nama, Email, Telepon, Alamat) VALUES (@NIM, @Nama, @Email, @Telepon, @Alamat)";
+                    using (SqlCommand cmd = new SqlCommand(querry, conn))
+                    {
 
+                    }
                 }
             }
         }
